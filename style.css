@@ -1,0 +1,371 @@
+    /* Font */
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    /* Header */
+    
+    header.bg-image {
+        background-image: url('backround.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    
+    nav li a {
+        color: #333333;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
+    
+    nav li a:hover {
+        color: #6095C6;
+    }
+    
+    .site-title {
+        font-size: 60px;
+        color: #1F3C4D;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .site-tagline {
+        font-size: 24px;
+        color: #3A3A3A;
+        margin: 0;
+    }
+    /* Main */
+    
+    main {
+        padding: 20px;
+        margin-top: 80px;
+        /* Account for fixed header */
+    }
+    /* About Me Section */
+    
+    #about-me {
+        padding: 80px 0;
+        background-color: #f3f3f3;
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .about-me-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .about-me-img {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+    
+    .profile-pic {
+        border-radius: 50%;
+        max-width: 100%;
+    }
+    
+    .about-me-text {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .about-me-text h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .about-me-text p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #666666;
+    }
+    /* Projects Section */
+    
+    .section-title {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .project-item {
+        flex-basis: calc(50% - 15px);
+        /* Update to 50% minus gap between items */
+    }
+    
+    .project-item img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .project-details {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+    }
+    
+    .project-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .project-description {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    /* Skills Section */
+    /* Styling for the Skills section */
+    
+    #skills {
+        background-color: #f2f2f2;
+        padding: 80px 0;
+    }
+    
+    .skill-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .skill-description {
+        font-size: 16px;
+        font-weight: 400;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    
+    .skill-item {
+        padding: 40px;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .skill-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .skill-item:last-child {
+        margin-bottom: 0;
+    }
+    /* Media queries for responsive design */
+    
+    @media (max-width: 991px) {
+        .skill-item {
+            margin-bottom: 40px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .skill-item {
+            padding: 30px;
+        }
+        .skill-title {
+            font-size: 20px;
+        }
+        .skill-description {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    }
+    /* Styling for skill icons */
+    
+    .skill-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: #333;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .skill-icon:hover {
+        transform: rotate(360deg);
+        background-color: #ff6347;
+    }
+    /* Styling for skill titles */
+    
+    .skill-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .skill-title-text {
+        flex-grow: 1;
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .skill-title-level {
+        font-size: 14px;
+        font-weight: 400;
+        color: #555;
+    }
+    /* Styling for skill descriptions */
+    
+    .skill-description-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    /*CV*/
+    /* Style the section heading */
+    
+    .section-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    /* Style the CV item container */
+    
+    .cv-item {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Style the download CV button */
+    
+    .cv-item .btn-primary {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto 0;
+        font-size: 18px;
+        border-radius: 30px;
+        padding: 15px;
+        transition: background-color 0.3s ease;
+    }
+    /* Change the button color on hover */
+    
+    .cv-item .btn-primary:hover {
+        background-color: #2ecc71;
+    }
+    /* Footer */
+    /* Footer */
+    
+    footer {
+        background-color: #2c3e50;
+        color: #ffffff;
+        padding: 50px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    footer h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+    
+    footer p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #bdc3c7;
+        margin-bottom: 20px;
+    }
+    
+    footer ul.social-icons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    footer ul.social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    footer ul.social-icons li:last-child {
+        margin-right: 0;
+    }
+    
+    footer ul.social-icons li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    }
+    
+    footer ul.social-icons li a:hover {
+        background-color: #ffffff;
+        color: #2c3e50;
+    }
+    
+    footer p.footer-bottom {
+        font-size: 14px;
+        color: #bdc3c7;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
